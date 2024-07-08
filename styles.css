@@ -1,5 +1,5 @@
 body, html {
-  font-family: Futura, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(-45deg, #211951, #15F5BA, #836FFF);
@@ -8,31 +8,62 @@ body, html {
   width: 100%;
 }
 
+.frosted-glass {
+  background: rgba(0, 0, 0, 0.5); /* White with transparency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 100%;
+}
+
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   height: 100%;
   width: 100%;
 }
 
 .content {
-  text-align: center;
+  text-align: left;
+  margin: 10% 10%;
 }
 
 .content h1 {
   color: white;
-  font-size: 5em;
+  font-size: 48px;
 }
 
 .content a {
-  color: white;
-  font-size: 2em;
+  color: lightgray;
+  font-size: 24px;
+  font-weight: 100;
+  text-decoration: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.link a:hover {
+  color: #15F5BA;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.link {
+  margin-bottom: 15px;
 }
 
 .download {
-  margin-top: 10em;
+  margin: 50px 0;
 }
 
 img {
-  width: 15vw;
+  width: 200px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: lightgray;
+  text-align: left;
+  margin: 10% 10%;
 }
